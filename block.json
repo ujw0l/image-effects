@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/image-effects",
+	"title": "Image Effects",
+	"category": "media",
+	"icon": "format-image",
+	"example": {},
+	"description": "Block to apply css filter effects to the image and embed them in post",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "image-effects",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
