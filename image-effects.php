@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name:       Image Effects
- * Description:       Example block written with ESNext standard and JSX support – build step required.
+ * Description:       Block to apply css filter effects to the image and embed them in post.
  * Requires at least: 5.7
- * Requires PHP:      7.0
- * Version:           0.1.0
+ * Requires PHP:      7.4.9
+ * Version:           1.0.0
  * Author:            UjW0L
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
