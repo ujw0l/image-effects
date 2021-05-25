@@ -5,13 +5,15 @@
  * Requires at least: 5.7
  * Requires PHP:      7.4.9
  * Version:           1.0.0
- * Author:            UjW0L
+ * Author:            Ujwol Bastakoti
+ * Author URI:        https://ujw0l.github.io/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       image-effects
  *
  * @package           create-block
  */
+
 
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
