@@ -40,7 +40,6 @@ export default function Edit({ attributes, setAttributes }) {
 	useEffect(() => {
 
 		setAttributes({ filter: `${attributes.blur}${attributes.brightness}${attributes.contrast} ${attributes.grayScale}${attributes.hueRotate}${attributes.invert}${attributes.opacity}${attributes.saturate}${attributes.sepia}${attributes.dropShadow}` });
-		console.log(attributes.filter);
 	}, [attributes.blur, attributes.brightness, attributes.contrast, attributes.grayScale, attributes.hueRotate, attributes.invert, attributes.opacity, attributes.saturate, attributes.sepia, attributes.dropShadow])
 
 	return (
