@@ -32,7 +32,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType('create-block/image-effects', {
+registerBlockType('image-eff/image-effects', {
 
 	keywords: [__('Image effetcs', 'image-effects'), __('image effects', 'image-effects')],
 	attributes: {
