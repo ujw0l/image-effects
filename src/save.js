@@ -24,8 +24,8 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 export default function save({ attributes }) {
 	return (
-		<div {...useBlockProps.save()}>
-			{0 < attributes.mediaUrl.length ? <img style={{ 'filter': `${attributes.filter}` }} src={attributes.mediaUrl} /> : ''}
+		<div {...useBlockProps.save()} style={{maxWidth:'100%'}}>
+			{0 < attributes.mediaUrl.length ? <img style={{ 'filter': `${attributes.filter}`, marginLeft:'auto', marginRight:'auto', display:'block' }} src={attributes.mediaUrl} /> : ''}
 		</div>
 	);
 }
