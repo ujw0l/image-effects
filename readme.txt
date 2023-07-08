@@ -1,16 +1,17 @@
 === Image Effects ===
 Contributors:      UjW0L
+Donate link:       https://www.patreon.com/ujw0l/membership
 Tags:              block, image-effect, css-filter
-Tested up to:      5.7.0
-Stable tag:        1.0.0
+Tested up to:      6.2.2
+Stable tag:        1.1.0
 Requires PHP:      7.4.9
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Gutenberg block to add effects to  image 
+Gutenberg block to apply css filters  to image 
 
 == Description ==
-This plugins lets you add image to page and post and apply different image effects to the image
+This plugins lets you add image to page and post and apply css filters to the image
 
 == Installation ==
 
@@ -35,4 +36,7 @@ This section describes how to install the plugin and get it working.
 
 = 1.0.0 =
 * Release
+
+= 1.1.0 =
+* Bug Fixes
 

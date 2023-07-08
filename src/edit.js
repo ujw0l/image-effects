@@ -45,10 +45,10 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<div {...useBlockProps()}>
 			<div style={{ width: '100%' }}>
-				{0 < attributes.mediaUrl.length ? <img style={{ 'filter': `${attributes.filter}` }} src={attributes.mediaUrl} /> : ''}
+				{0 < attributes.mediaUrl.length ? <img style={{ 'filter': `${attributes.filter}`, marginLeft:'auto', marginRight:'auto', display:'block' }} src={attributes.mediaUrl} /> : ''}
 			</div>
 			{0 < attributes.mediaUrl.length ? <br /> : ''}
-			<div style={{ padding: '10px', width: '100%', backgroundColor: 'rgba(255,255,255,1)' }}>
+			<div style={{ padding: '10px', width: 'auto', border:'1px solid #21759b', backgroundColor: 'rgba(255,255,255,1)' }}>
 				<h5 style={{ color: 'rgba(0,0,0,1)' }} className='dashicons-before dashicons-format-image' >{__('Image Effects', 'image-effects')}</h5>
 				<MediaUploadCheck>
 					<MediaUpload
