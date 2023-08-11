@@ -64,6 +64,8 @@ registerBlockType('image-eff/image-effects', {
 		dsBlurRad: { type: 'String', default: ' 0px' },
 		dsBlurRadVal: { type: 'Number', default: 0 },
 		dsColor: { type: 'String', default: ' #000000' },
+		imgWd:{type:"Number",default:''},
+		imgHt:{type:'Number',default:''}
 
 	},
 

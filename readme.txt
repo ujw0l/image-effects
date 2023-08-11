@@ -2,8 +2,8 @@
 Contributors:      UjW0L
 Donate link:       https://www.patreon.com/ujw0l/membership
 Tags:              block, image-effect, css-filter
-Tested up to:      6.2.2
-Stable tag:        1.1.0
+Tested up to:      6.3.0
+Stable tag:        1.2.0
 Requires PHP:      7.4.9
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -39,4 +39,9 @@ This section describes how to install the plugin and get it working.
 
 = 1.1.0 =
 * Bug Fixes
+
+
+= 1.2.0 =
+* Ability to set width
+
 
