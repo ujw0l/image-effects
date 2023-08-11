@@ -1,7 +1,7 @@
 
 
-import { useEffect } from 'react';
-import { CheckboxControl, PanelBody, Button, RangeControl, ColorPicker } from '@wordpress/components';
+import { useEffect} from 'react';
+import {  PanelBody, Button, RangeControl, ColorPicker } from '@wordpress/components';
 
 
 /**
@@ -37,15 +37,17 @@ import './editor.scss';
  */
 export default function Edit({ attributes, setAttributes }) {
 
+
 	useEffect(() => {
 
 		setAttributes({ filter: `${attributes.blur}${attributes.brightness}${attributes.contrast} ${attributes.grayScale}${attributes.hueRotate}${attributes.invert}${attributes.opacity}${attributes.saturate}${attributes.sepia}${attributes.dropShadow}` });
 	}, [attributes.blur, attributes.brightness, attributes.contrast, attributes.grayScale, attributes.hueRotate, attributes.invert, attributes.opacity, attributes.saturate, attributes.sepia, attributes.dropShadow])
 
+	
 	return (
 		<div {...useBlockProps()}>
-			<div style={{ width: '100%' }}>
-				{0 < attributes.mediaUrl.length ? <img style={{ 'filter': `${attributes.filter}`, marginLeft:'auto', marginRight:'auto', display:'block' }} src={attributes.mediaUrl} /> : ''}
+			<div style={{width:'100%'}} >
+				{0 < attributes.mediaUrl.length ? <img style={{ 'filter': `${attributes.filter}`,  width:'100%',marginLeft:'auto', marginRight:'auto', display:'block' }} src={attributes.mediaUrl} /> : ''}
 			</div>
 			{0 < attributes.mediaUrl.length ? <br /> : ''}
 			<div style={{ padding: '10px', width: 'auto', border:'1px solid #21759b', backgroundColor: 'rgba(255,255,255,1)' }}>
@@ -62,6 +64,18 @@ export default function Edit({ attributes, setAttributes }) {
 			</div>
 
 			<InspectorControls>
+
+				<PanelBody>
+
+				<RangeControl
+						label={__('Imgae Width (px)', 'image-effects')}
+						min={100}
+						max={1000}
+						onChange={val => setAttributes({imgWd:val}) }
+						value={attributes.imgWd}
+					/>			
+
+				</PanelBody>
 				<PanelBody>
 					<h3> {__('Select effects to apply', 'image-effects')} </h3>
 					<RangeControl
